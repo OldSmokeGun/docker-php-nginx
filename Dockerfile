@@ -54,4 +54,4 @@ RUN mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.php \
 
 EXPOSE 80 443
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
